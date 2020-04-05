@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+    <class>MainWindow</class>
+    <widget class="QMainWindow" name="MainWindow">
+        <property name="geometry">
+            <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>800</width>
+                <height>600</height>
+            </rect>
+        </property>
+        <property name="windowTitle">
+            <string>Móviles</string>
+        </property>
+        <widget class="QWidget" name="centralwidget">
+            <widget class="QLabel" name="label_titulo">
+                <property name="geometry">
+                    <rect>
+                        <x>200</x>
+                        <y>10</y>
+                        <width>400</width>
+                        <height>50</height>
+                    </rect>
+                </property>
+                <property name="sizePolicy">
+                    <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                        <horstretch>0</horstretch>
+                        <verstretch>0</verstretch>
+                    </sizepolicy>
+                </property>
+                <property name="font">
+                    <font>
+                        <family>Verdana</family>
+                        <pointsize>16</pointsize>
+                        <underline>true</underline>
+                    </font>
+                </property>
+                <property name="text">
+                    <string>Listar móviles</string>
+                </property>
+                <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                </property>
+            </widget>
+            <widget class="QListWidget" name="listWidget">
+                <property name="geometry">
+                    <rect>
+                        <x>10</x>
+                        <y>70</y>
+                        <width>780</width>
+                        <height>494</height>
+                    </rect>
+                </property>
+            </widget>
+        </widget>
+        <widget class="QMenuBar" name="menubar">
+            <property name="geometry">
+                <rect>
+                    <x>0</x>
+                    <y>0</y>
+                    <width>800</width>
+                    <height>26</height>
+                </rect>
+            </property>
+            <widget class="QMenu" name="menuM_viles">
+                <property name="title">
+                    <string>Móviles</string>
+                </property>
+                <addaction name="menu_registrar"/>
+                <addaction name="menu_listar_text"/>
+                <addaction name="menu_listar_list"/>
+                <addaction name="menu_listar_table"/>
+                <addaction name="separator"/>
+                <addaction name="menu_salir"/>
+            </widget>
+            <addaction name="menuM_viles"/>
+        </widget>
+        <action name="menu_registrar">
+            <property name="text">
+                <string>Registrar móvil</string>
+            </property>
+        </action>
+        <action name="menu_listar_text">
+            <property name="text">
+                <string>Listar móviles (TextEdit)</string>
+            </property>
+        </action>
+        <action name="menu_salir">
+            <property name="text">
+                <string>Salir</string>
+            </property>
+        </action>
+        <action name="menu_listar_list">
+            <property name="text">
+                <string>Listar móviles (List Widget)</string>
+            </property>
+        </action>
+        <action name="menu_listar_table">
+            <property name="text">
+                <string>Listar móviles (Table Widget)</string>
+            </property>
+        </action>
+    </widget>
+    <resources/>
+    <connections/>
+</ui>
