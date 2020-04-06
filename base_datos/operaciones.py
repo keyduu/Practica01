@@ -1,6 +1,6 @@
 import mysql.connector
+
 from base_datos import constantes
-from clases.movil import Movil
 
 
 def conectar():
