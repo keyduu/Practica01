@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>window_start</class>
+ <widget class="QMainWindow" name="window_start">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>800</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>800</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="font">
+   <font>
+    <family>Verdana</family>
+    <pointsize>10</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Móviles</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="images/images.qrc">
+    <normaloff>:/icons/icon_mobile_phone.png</normaloff>:/icons/icon_mobile_phone.png</iconset>
+  </property>
+  <property name="iconSize">
+   <size>
+    <width>32</width>
+    <height>32</height>
+   </size>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="lbl_welcome">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>800</width>
+      <height>320</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>800</width>
+      <height>320</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <pointsize>48</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>¡Bienvenido!</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbl_image">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>320</y>
+      <width>800</width>
+      <height>250</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="images/images.qrc">:/images/image_mobile_phone.png</pixmap>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="mobile_menu">
+    <property name="title">
+     <string>Móviles</string>
+    </property>
+    <addaction name="menu_register"/>
+    <addaction name="menu_list"/>
+    <addaction name="menu_list_with_listwidget"/>
+    <addaction name="menu_list_with_tablewidget"/>
+    <addaction name="separator"/>
+    <addaction name="menu_exit"/>
+   </widget>
+   <addaction name="mobile_menu"/>
+  </widget>
+  <action name="menu_register">
+   <property name="text">
+    <string>Registrar móvil</string>
+   </property>
+  </action>
+  <action name="menu_list">
+   <property name="text">
+    <string>Listar móviles (TextEdit)</string>
+   </property>
+  </action>
+  <action name="menu_exit">
+   <property name="text">
+    <string>Salir</string>
+   </property>
+  </action>
+  <action name="menu_list_with_listwidget">
+   <property name="text">
+    <string>Listar móviles (List Widget)</string>
+   </property>
+  </action>
+  <action name="menu_list_with_tablewidget">
+   <property name="text">
+    <string>Listar móviles (Table Widget)</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="images/images.qrc"/>
+ </resources>
+ <connections/>
+</ui>
