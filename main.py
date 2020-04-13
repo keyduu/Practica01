@@ -2,10 +2,10 @@ import sys
 
 from PyQt5.QtWidgets import QApplication
 
-from clases.aplicacion import Aplicacion
+from classes.application import Application
 
 app = QApplication(sys.argv)
-ventana = Aplicacion()
+ventana = Application()
 ventana.show()
 
 sys.exit(app.exec())

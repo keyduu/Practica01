@@ -146,12 +146,11 @@ class Application(QMainWindow):
         self.show_window_list_with_tablewidget()
         return
 
-    def btn_clicked_update(self, mobile_phone):
+    def btn_clicked_update(self):
         selected = self.window_list_with_tablewidget.tbl_list.currentRow()
-        print(selected)
         if selected != -1:  # Se comprueba si hay alguna fila seleccionada.
-            mobile_phone_id = self.window_list_with_tablewidget.tbl_list.item(selected,
-                                                                              0).text()  # se selecciona la celda de la primera columna de la fila seleccionada.
+            # se selecciona la celda de la primera columna de la fila seleccionada.
+            mobile_phone_id = self.window_list_with_tablewidget.tbl_list.item(selected, 0).text()
             mobile_phone = sql_operations.get_mobile_phone_by_id(mobile_phone_id)
             self.show_window_update(mobile_phone)
         else:
