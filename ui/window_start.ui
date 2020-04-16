@@ -32,8 +32,8 @@
    <string>Móviles</string>
   </property>
   <property name="windowIcon">
-   <iconset resource="images/images.qrc">
-    <normaloff>:/icons/icon_mobile_phone.png</normaloff>:/icons/icon_mobile_phone.png</iconset>
+   <iconset>
+    <normaloff>images/icons/icon_mobile_phone.png</normaloff>images/icons/icon_mobile_phone.png</iconset>
   </property>
   <property name="iconSize">
    <size>
@@ -85,7 +85,7 @@
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="images/images.qrc">:/images/image_mobile_phone.png</pixmap>
+     <pixmap>images/image_mobile_phone.png</pixmap>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
@@ -140,8 +140,6 @@
    </property>
   </action>
  </widget>
- <resources>
-  <include location="images/images.qrc"/>
- </resources>
+ <resources/>
  <connections/>
 </ui>

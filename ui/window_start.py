@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'ui\window_start.ui'
+# Form implementation generated from reading ui file 'ui/window_start.ui'
 #
-# Created by: PyQt5 UI code generator 5.13.2
+# Created by: PyQt5 UI code generator 5.14.2
 #
 # WARNING! All changes made in this file will be lost!
 
@@ -14,17 +14,21 @@ class Ui_window_start(object):
     def setupUi(self, window_start):
         window_start.setObjectName("window_start")
         window_start.resize(800, 600)
+        window_start.setMinimumSize(QtCore.QSize(800, 600))
+        window_start.setMaximumSize(QtCore.QSize(800, 600))
         font = QtGui.QFont()
         font.setFamily("Verdana")
+        font.setPointSize(10)
         window_start.setFont(font)
         icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap(":/icons/icon_mobile_phone.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon.addPixmap(QtGui.QPixmap("ui\\images/icons/icon_mobile_phone.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         window_start.setWindowIcon(icon)
         window_start.setIconSize(QtCore.QSize(32, 32))
         self.centralwidget = QtWidgets.QWidget(window_start)
         self.centralwidget.setObjectName("centralwidget")
         self.lbl_welcome = QtWidgets.QLabel(self.centralwidget)
         self.lbl_welcome.setGeometry(QtCore.QRect(0, 0, 800, 320))
+        self.lbl_welcome.setMinimumSize(QtCore.QSize(800, 320))
         font = QtGui.QFont()
         font.setFamily("Verdana")
         font.setPointSize(48)
@@ -36,7 +40,7 @@ class Ui_window_start(object):
         self.lbl_image = QtWidgets.QLabel(self.centralwidget)
         self.lbl_image.setGeometry(QtCore.QRect(0, 320, 800, 250))
         self.lbl_image.setText("")
-        self.lbl_image.setPixmap(QtGui.QPixmap(":/images/image_mobile_phone.png"))
+        self.lbl_image.setPixmap(QtGui.QPixmap("ui\\images/image_mobile_phone.png"))
         self.lbl_image.setAlignment(QtCore.Qt.AlignCenter)
         self.lbl_image.setObjectName("lbl_image")
         window_start.setCentralWidget(self.centralwidget)
@@ -77,4 +81,3 @@ class Ui_window_start(object):
         self.menu_exit.setText(_translate("window_start", "Salir"))
         self.menu_list_with_listwidget.setText(_translate("window_start", "Listar móviles (List Widget)"))
         self.menu_list_with_tablewidget.setText(_translate("window_start", "Listar móviles (Table Widget)"))
-import images_rc

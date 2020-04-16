@@ -38,8 +38,8 @@
    <string>Móviles</string>
   </property>
   <property name="windowIcon">
-   <iconset resource="images/images.qrc">
-    <normaloff>:/icons/icon_mobile_phone.png</normaloff>:/icons/icon_mobile_phone.png</iconset>
+   <iconset>
+    <normaloff>images/icons/icon_mobile_phone.png</normaloff>images/icons/icon_mobile_phone.png</iconset>
   </property>
   <property name="iconSize">
    <size>
@@ -54,7 +54,7 @@
       <x>200</x>
       <y>10</y>
       <width>400</width>
-      <height>50</height>
+      <height>40</height>
      </rect>
     </property>
     <property name="sizePolicy">
@@ -81,7 +81,7 @@
     <property name="geometry">
      <rect>
       <x>150</x>
-      <y>130</y>
+      <y>100</y>
       <width>245</width>
       <height>30</height>
      </rect>
@@ -108,8 +108,8 @@
    <widget class="QLineEdit" name="txt_model">
     <property name="geometry">
      <rect>
-      <x>400</x>
-      <y>130</y>
+      <x>405</x>
+      <y>100</y>
       <width>245</width>
       <height>30</height>
      </rect>
@@ -123,15 +123,18 @@
     <property name="font">
      <font>
       <family>Verdana</family>
-      <pointsize>12</pointsize>
+      <pointsize>11</pointsize>
      </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-radius: 10px; border: 2px solid navy;</string>
     </property>
    </widget>
    <widget class="QLabel" name="lbl_os">
     <property name="geometry">
      <rect>
       <x>150</x>
-      <y>180</y>
+      <y>140</y>
       <width>245</width>
       <height>30</height>
      </rect>
@@ -155,33 +158,11 @@
      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
     </property>
    </widget>
-   <widget class="QLineEdit" name="txt_os">
-    <property name="geometry">
-     <rect>
-      <x>400</x>
-      <y>180</y>
-      <width>245</width>
-      <height>30</height>
-     </rect>
-    </property>
-    <property name="sizePolicy">
-     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-      <horstretch>0</horstretch>
-      <verstretch>0</verstretch>
-     </sizepolicy>
-    </property>
-    <property name="font">
-     <font>
-      <family>Verdana</family>
-      <pointsize>12</pointsize>
-     </font>
-    </property>
-   </widget>
    <widget class="QLabel" name="lbl_memory">
     <property name="geometry">
      <rect>
       <x>150</x>
-      <y>230</y>
+      <y>180</y>
       <width>245</width>
       <height>30</height>
      </rect>
@@ -207,8 +188,8 @@
    <widget class="QLineEdit" name="txt_memory">
     <property name="geometry">
      <rect>
-      <x>400</x>
-      <y>230</y>
+      <x>405</x>
+      <y>180</y>
       <width>245</width>
       <height>30</height>
      </rect>
@@ -221,15 +202,19 @@
     </property>
     <property name="font">
      <font>
-      <pointsize>12</pointsize>
+      <family>Verdana</family>
+      <pointsize>11</pointsize>
      </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-radius: 10px; border: 2px solid navy;</string>
     </property>
    </widget>
    <widget class="QLabel" name="lbl_price">
     <property name="geometry">
      <rect>
       <x>150</x>
-      <y>280</y>
+      <y>220</y>
       <width>245</width>
       <height>30</height>
      </rect>
@@ -255,8 +240,8 @@
    <widget class="QLineEdit" name="txt_price">
     <property name="geometry">
      <rect>
-      <x>400</x>
-      <y>280</y>
+      <x>405</x>
+      <y>220</y>
       <width>245</width>
       <height>30</height>
      </rect>
@@ -270,8 +255,11 @@
     <property name="font">
      <font>
       <family>Verdana</family>
-      <pointsize>12</pointsize>
+      <pointsize>11</pointsize>
      </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-radius: 10px; border: 2px solid navy;</string>
     </property>
    </widget>
    <widget class="QPushButton" name="btn_save">
@@ -292,21 +280,14 @@
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">	background-color:#33bdef;
-	border-radius:20px;
-	border:3px solid #057fd0;
-	color:#ffffff;
-	font-family:Verdana;
-	font-size:16px;
-	font-weight:bold;
-</string>
+     <string notr="true">background-color:lightblue; border-radius:20px; border:3px solid navy; color: black; font-family:Verdana; font-size:16px; font-weight:bold;</string>
     </property>
     <property name="text">
      <string>Guardar</string>
     </property>
     <property name="icon">
-     <iconset resource="images/images.qrc">
-      <normaloff>:/icons/icon_save.png</normaloff>:/icons/icon_save.png</iconset>
+     <iconset>
+      <normaloff>images/icons/icon_save.png</normaloff>images/icons/icon_save.png</iconset>
     </property>
     <property name="iconSize">
      <size>
@@ -319,7 +300,7 @@
     <property name="geometry">
      <rect>
       <x>150</x>
-      <y>80</y>
+      <y>60</y>
       <width>245</width>
       <height>30</height>
      </rect>
@@ -346,8 +327,8 @@
    <widget class="QLineEdit" name="txt_brand">
     <property name="geometry">
      <rect>
-      <x>400</x>
-      <y>80</y>
+      <x>405</x>
+      <y>60</y>
       <width>245</width>
       <height>30</height>
      </rect>
@@ -361,56 +342,223 @@
     <property name="font">
      <font>
       <family>Verdana</family>
+      <pointsize>11</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-radius: 10px; border: 2px solid navy;</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="chk_deal">
+    <property name="geometry">
+     <rect>
+      <x>405</x>
+      <y>260</y>
+      <width>245</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
       <pointsize>12</pointsize>
      </font>
     </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="grp_technology">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>300</y>
+      <width>220</width>
+      <height>70</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-radius: 10px; border: 2px solid navy;</string>
+    </property>
+    <property name="title">
+     <string>Tecnología</string>
+    </property>
+    <widget class="QRadioButton" name="rbtn_3g">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>30</y>
+       <width>60</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;</string>
+     </property>
+     <property name="text">
+      <string>3G</string>
+     </property>
+     <property name="checked">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="rbtn_4g">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>30</y>
+       <width>60</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;</string>
+     </property>
+     <property name="text">
+      <string>4G</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="rbtn_5g">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>30</y>
+       <width>60</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;</string>
+     </property>
+     <property name="text">
+      <string>5G</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="btn_select_image">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>380</y>
+      <width>165</width>
+      <height>110</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:lightblue; border-radius:20px; border:3px solid navy; color: black; font-family:Verdana; font-size:16px; font-weight:bold;</string>
+    </property>
+    <property name="inputMethodHints">
+     <set>Qt::ImhNone</set>
+    </property>
+    <property name="text">
+     <string>Seleccionar
+imagen</string>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbl_deal">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>260</y>
+      <width>245</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Oferta:</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbl_image">
+    <property name="geometry">
+     <rect>
+      <x>405</x>
+      <y>380</y>
+      <width>245</width>
+      <height>110</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="cmb_os">
+    <property name="geometry">
+     <rect>
+      <x>405</x>
+      <y>140</y>
+      <width>245</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <pointsize>11</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-radius: 10px; border: 2px solid navy;</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>Android</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>iOS</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Windows Phone</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Otro</string>
+     </property>
+    </item>
    </widget>
   </widget>
-  <action name="menu_registrar">
-   <property name="text">
-    <string>Registrar móvil</string>
-   </property>
-  </action>
-  <action name="menu_listar_text">
-   <property name="text">
-    <string>Listar móviles (TextEdit)</string>
-   </property>
-  </action>
-  <action name="menu_salir">
-   <property name="text">
-    <string>Salir</string>
-   </property>
-  </action>
-  <action name="menu_listar_list">
-   <property name="text">
-    <string>Listar móviles (List Widget)</string>
-   </property>
-  </action>
-  <action name="menu_listar_table">
-   <property name="text">
-    <string>Listar móviles (Table Widget)</string>
-   </property>
-  </action>
  </widget>
- <resources>
-  <include location="images/images.qrc"/>
- </resources>
+ <resources/>
  <connections/>
- <designerdata>
-  <property name="gridDeltaX">
-   <number>10</number>
-  </property>
-  <property name="gridDeltaY">
-   <number>10</number>
-  </property>
-  <property name="gridSnapX">
-   <bool>true</bool>
-  </property>
-  <property name="gridSnapY">
-   <bool>true</bool>
-  </property>
-  <property name="gridVisible">
-   <bool>true</bool>
-  </property>
- </designerdata>
 </ui>
