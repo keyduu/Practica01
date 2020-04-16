@@ -96,9 +96,9 @@ class Application(QMainWindow):
             self.window_list_with_tablewidget.tbl_list.setItem(row, 4, cell)
             cell = QTableWidgetItem(str(mobile_phone.price))
             self.window_list_with_tablewidget.tbl_list.setItem(row, 5, cell)
-            cell = QTableWidgetItem(str(mobile_phone.technology))
-            self.window_list_with_tablewidget.tbl_list.setItem(row, 6, cell)
             cell = QTableWidgetItem(str(mobile_phone.deal))
+            self.window_list_with_tablewidget.tbl_list.setItem(row, 6, cell)
+            cell = QTableWidgetItem(str(mobile_phone.technology))
             self.window_list_with_tablewidget.tbl_list.setItem(row, 7, cell)
             try:
                 if pathlib.Path(mobile_phone.photo_path).is_file():
